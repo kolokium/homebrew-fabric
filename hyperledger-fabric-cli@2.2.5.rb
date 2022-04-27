@@ -1,12 +1,12 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class HyperledgerFabricCli < Formula
+class HyperledgerFabricCliAT225 < Formula
   desc "Hyperledger Fabric is an enterprise-grade permissioned distributed ledger"
   homepage "https://www.hyperledger.org/use/fabric"
-  url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.4.3.tar.gz"
-  sha256 "117ab5f6d4433c6094c1c136a73014897dea86e0411b42d3c2b60bc36713dc45"
-  license ""
+  url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.2.5.tar.gz"
+  sha256 "aba2ccee8fe5ee019cd8fa110c611c66d4754ac3d48a7226d8b46aeb784cea37"
+  license "Apache-2.0 License"
 
   # depends_on "cmake" => :build
 
@@ -21,9 +21,7 @@ class HyperledgerFabricCli < Formula
     bin.install "bin/discover"
     bin.install "bin/fabric-ca-client"
     bin.install "bin/fabric-ca-server"
-    bin.install "bin/ledgerutil"
     bin.install "bin/orderer"
-    bin.install "bin/osnadmin"
     bin.install "bin/peer"
   end
 
@@ -43,10 +41,7 @@ class HyperledgerFabricCli < Formula
     system "test", "-e", "#{bin}/discover"
     system "test", "-e", "#{bin}/fabric-ca-client"
     system "test", "-e", "#{bin}/fabric-ca-server"
-    system "test", "-e", "#{bin}/ledgerutil"
     system "test", "-e", "#{bin}/orderer"
-    system "test", "-e", "#{bin}/osnadmin"
     system "test", "-e", "#{bin}/peer"
   end
 end
-
