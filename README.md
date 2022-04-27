@@ -1,3 +1,5 @@
+![brew test-bot](https://github.com/japidei/homebrew-tap/actions/workflows/tests.yml/badge.svg)
+
 # Japidei Tap
 
 ## How do I install these formulae?
