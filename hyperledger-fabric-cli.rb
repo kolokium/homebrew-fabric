@@ -15,6 +15,7 @@ class HyperledgerFabricCli < Formula
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     system "./scripts/bootstrap.sh", "-d", "-s"
+    bin.install "bin/configtxgen"
     bin.install "bin/configtxlator"
     bin.install "bin/cryptogen"
     bin.install "bin/discover"
@@ -36,6 +37,15 @@ class HyperledgerFabricCli < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "test", "-e", "#{bin}/configtxgen"
+    system "test", "-e", "#{bin}/configtxlator"
+    system "test", "-e", "#{bin}/cryptogen"
+    system "test", "-e", "#{bin}/discover"
+    system "test", "-e", "#{bin}/fabric-ca-client"
+    system "test", "-e", "#{bin}/fabric-ca-server"
+    system "test", "-e", "#{bin}/ledgerutil"
+    system "test", "-e", "#{bin}/orderer"
+    system "test", "-e", "#{bin}/osnadmin"
+    system "test", "-e", "#{bin}/peer"
   end
 end
