@@ -4,7 +4,7 @@ class HyperledgerFabricCliAT22 < Formula
   url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.2.5.tar.gz"
   version "2.2.5"
   sha256 "aba2ccee8fe5ee019cd8fa110c611c66d4754ac3d48a7226d8b46aeb784cea37"
-  license "Apache-2.0 License"
+  license "Apache-2.0"
 
   def install
     system "./scripts/bootstrap.sh", "-d", "-s"
