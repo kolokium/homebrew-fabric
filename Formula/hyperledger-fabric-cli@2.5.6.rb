@@ -3,7 +3,7 @@ class HyperledgerFabricCliAT256 < Formula
   homepage "https://www.hyperledger.org/use/fabric"
   url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.5.6.tar.gz"
   version "2.5.6"
-  sha256 "75687b652084ae5c76fa82a40d56ac1324244fbd80e775435778457465ee4273"
+  sha256 "44a694315bc332f8a005910b0affbd5b7daf7721a2501c904a45ee9a49dfb028"
   license "Apache-2.0"
 
   def install
