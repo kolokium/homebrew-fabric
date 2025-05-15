@@ -1,4 +1,4 @@
-class HyperledgerFabricCliAT225 < Formula
+class HyperledgerFabricCliAT2215 < Formula
   desc "Hyperledger Fabric is an enterprise-grade permissioned distributed ledger"
   homepage "https://www.hyperledger.org/use/fabric"
   url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.2.15.tar.gz"
