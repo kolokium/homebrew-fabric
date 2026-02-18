@@ -1,4 +1,4 @@
-cask "docker-desktop" do
+cask "docker-desktop-v28" do
   arch arm: "arm64", intel: "amd64"
 
   version "4.51.0,210443"
