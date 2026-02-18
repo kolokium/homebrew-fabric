@@ -2,12 +2,12 @@ class HyperledgerFabricCliAT2513 < Formula
   desc "Hyperledger Fabric is an enterprise-grade permissioned distributed ledger"
   homepage "https://www.hyperledger.org/use/fabric"
   url "https://github.com/hyperledger/fabric/archive/refs/tags/v2.5.14.tar.gz"
-  version "2.5.13"
+  version "2.5.14"
   sha256 "be5bb4291a40c0b112dc44fb2dfee9b78360b2d5ab359aff0eee5f81eecb1ba8"
   license "Apache-2.0"
 
   def install
-    system "./scripts/install-fabric.sh", "-f", "2.5.13", "binary"
+    system "./scripts/install-fabric.sh", "-f", "2.5.14", "binary"
     bin.install "bin/configtxgen"
     bin.install "bin/configtxlator"
     bin.install "bin/cryptogen"
